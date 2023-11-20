@@ -32,4 +32,22 @@
         <translation type="unfinished"></translation>
     </message>
 </context>
+<context>
+    <name>Settings</name>
+    <message>
+        <location filename="../qml/pages/Settings.qml" line="45"/>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Settings.qml" line="116"/>
+        <source>Regular contrast</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Settings.qml" line="117"/>
+        <source>High contrast</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>
