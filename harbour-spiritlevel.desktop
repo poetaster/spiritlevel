@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-vatupassi
+Exec=harbour-vatupassi
+Name=Vatupassi
+X-Desktop-File-Install-Version=0.20
