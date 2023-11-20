@@ -1,9 +1,8 @@
 /*
-  Copyright (C) 2013 Jolla Ltd.
-  Contact: Thomas Perl <thomas.perl@jollamobile.com>
-  All rights reserved.
-
-*/
+  Copyright (C) 2014 - 2022 Bruno Valdrighi Luvizotto
+  Copyright (C) 2023 Mark Washeim <blueprint@poetaster.de
+  Contact: Mark Washeim <blueprint@poetaster.de>
+  */
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
