@@ -52,7 +52,7 @@ Page {
             width: page.width
             spacing: Theme.paddingLarge
             PageHeader {
-                title: "Vatupassi"
+                title: qsTr("Spiritlevel")
             }
             Label {
                 x: Theme.paddingLarge
@@ -63,14 +63,14 @@ Page {
             Label {
                 x: Theme.paddingLarge + 50
                 text: "X: " + (accel.x_acel - accel.x_acel_cal).toFixed(accel.precisao)
-                visible: config.style == "regular" || config.uni_style == "Both" || config.uni_style == "X"
+                visible: config.Style == "regular" || config.Uni_style == "Both" || config.Uni_style == "X"
                 color: Theme.highlightColor
                 font.pixelSize: Theme.fontSizeLarge
             }
             Label {
                 x: Theme.paddingLarge + 50
                 text: "Y: " + (accel.y_acel - accel.y_acel_cal).toFixed(accel.precisao)
-                visible: config.style == "regular" || config.uni_style == "Both" || config.uni_style == "Y"
+                visible: config.Style == "regular" || config.Uni_style == "Both" || config.Uni_style == "Y"
                 color: Theme.highlightColor
                 font.pixelSize: Theme.fontSizeLarge
             }
@@ -86,7 +86,7 @@ Page {
 
         Big_circle {
             id: big_circle_page
-            visible: config.style == "regular"
+            visible: config.Style == "regular"
             anchors {
                 left: parent.left; right: parent.right
                 margins: Theme.paddingLarge
@@ -95,7 +95,7 @@ Page {
         }
         Uni_circle {
             id: uni_circle_page
-            visible: config.style == "unidimensional"
+            visible: config.Style == "unidimensional"
             anchors {
                 left: parent.left; right: parent.right
                 margins: Theme.paddingLarge

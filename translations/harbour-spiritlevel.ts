@@ -4,6 +4,7 @@
 <context>
     <name>CoverPage</name>
     <message>
+        <location filename="../qml/cover/CoverPage.qml" line="47"/>
         <source>Angles:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -11,14 +12,17 @@
 <context>
     <name>FirstPage</name>
     <message>
+        <location filename="../qml/pages/FirstPage.qml" line="31"/>
         <source>Reset Calibration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/FirstPage.qml" line="38"/>
         <source>Calibrate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/FirstPage.qml" line="59"/>
         <source>Angles:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -26,12 +30,14 @@
 <context>
     <name>SecondPage</name>
     <message>
+        <location filename="../qml/pages/SecondPage.qml" line="15"/>
         <source>Nested Page</source>
-        <translation>Unterseite</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/SecondPage.qml" line="22"/>
         <source>Item</source>
-        <translation>Element</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

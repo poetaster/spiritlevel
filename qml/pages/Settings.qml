@@ -8,27 +8,27 @@ Page {
         anchors.fill: parent
         Component.onCompleted:
         {
-            if(config.contrast == "low")
+            if(config.Contrast == "low")
                 contrast_combo.currentIndex = 0
-            else if (config.contrast == "high")
+            else if (config.Contrast == "high")
                 contrast_combo.currentIndex = 1
 
-            if(config.style == "regular")
+            if(config.Style == "regular")
             {
                 regular_switch.checked = true
                 unidimensional_switch.checked = false
             }
-            else if(config.style == "unidimensional")
+            else if(config.Style == "unidimensional")
             {
                 regular_switch.checked = false
                 unidimensional_switch.checked = true
             }
 
-            if(config.uni_style == "both")
+            if(config.Uni_style == "both")
                 unidimensional_combo.currentIndex = 0;
-            else if(config.uni_style == "X")
+            else if(config.Uni_style == "X")
                 unidimensional_combo.currentIndex = 1;
-            else if(config.uni_style == "Y")
+            else if(config.Uni_style == "Y")
                 unidimensional_combo.currentIndex = 2;
         }
 
@@ -45,7 +45,7 @@ Page {
             TextSwitch {
                 id: regular_switch
                 text: "Regular style"
-                checked: config.style == "regular" ? true : false
+                checked: config.Style == "regular" ? true : false
                 automaticCheck: false
                 onClicked:
                 {
@@ -55,7 +55,7 @@ Page {
                     }
                     else
                     {
-                        config.style = "regular";
+                        config.Style = "regular";
                         checked = true;
                         unidimensional_switch.checked = false;
                     }
@@ -64,7 +64,7 @@ Page {
             TextSwitch {
                 id: unidimensional_switch
                 text: "Unidimensional style"
-                checked: config.style == "unidimensional" ? true : false
+                checked: config.Style == "unidimensional" ? true : false
                 automaticCheck: false
                 onClicked:
                 {
@@ -74,7 +74,7 @@ Page {
                     }
                     else
                     {
-                        config.style = "unidimensional";
+                        config.Style = "unidimensional";
                         checked = true;
                         regular_switch.checked = false;
                     }
@@ -94,11 +94,11 @@ Page {
                 onCurrentIndexChanged:
                 {
                     if(currentIndex == 0)
-                        config.uni_style = "Both"
+                        config.Uni_style = "Both"
                     else if(currentIndex == 1)
-                        config.uni_style = "X"
+                        config.Uni_style = "X"
                     else if(currentIndex == 2)
-                        config.uni_style = "Y"
+                        config.Uni_style = "Y"
                 }
             }
             ComboBox {
@@ -114,9 +114,9 @@ Page {
                 onCurrentIndexChanged:
                 {
                     if(currentIndex == 0)
-                        config.contrast = "low";
+                        config.Contrast = "low";
                     if(currentIndex == 1)
-                        config.contrast = "high";
+                        config.Contrast = "high";
                 }
             }
         }

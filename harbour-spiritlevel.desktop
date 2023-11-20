@@ -1,7 +1,15 @@
 [Desktop Entry]
 Type=Application
 X-Nemo-Application-Type=silica-qt5
-Icon=harbour-vatupassi
-Exec=harbour-vatupassi
-Name=Vatupassi
-X-Desktop-File-Install-Version=0.20
+Icon=harbour-spiritlevel
+Name=Spiritlevel
+Exec=sailfish-qml harbour-spiritlevel
+
+# Remember to comment out the following line, if you do not want to use
+# a different app name in German locale (de).
+#Name[de]=Spiritlevel
+
+[X-Sailjail]
+OrganizationName=de.poetaster
+ApplicationName=Spiritlevel
+Permissions=Compatibility;Camera;Audio;Microphone;MediaIndexing;RemovableMedia;UserDirs

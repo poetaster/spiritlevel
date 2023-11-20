@@ -19,19 +19,19 @@ Page {
                 title: "About"
             }
             Label {
-                text: "Vatupassi"
+                text: "Spiritlevel"
                 color: Theme.highlightColor
                 font.pixelSize: Theme.fontSizeHuge
                 anchors.horizontalCenter: parent.horizontalCenter
             }
             Label {
-                text: "0.4.1-1"
+                text: "0.5"
                 color: Theme.primaryColor
                 font.pixelSize: Theme.fontSizeMedium
                 anchors.horizontalCenter: parent.horizontalCenter
             }
             Label {
-                text: "Author: Bruno Luvizotto"
+                text: "Author: Bruno Luvizotto, Updates, Poetaster"
                 color: Theme.primaryColor
                 font.pixelSize: Theme.fontSizeMedium
                 anchors.horizontalCenter: parent.horizontalCenter

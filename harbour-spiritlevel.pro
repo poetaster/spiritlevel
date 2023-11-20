@@ -21,9 +21,10 @@ DISTFILES += \
     qml/pages/*.qml \
     qml/elements/*.qml \
     qml/cover/*.qml \
-    rpm/spiritlevel.changes.in \
-    rpm/spiritlevel.changes.run.in \
-    rpm/spiritlevel.spec \
+    qml/util/*.js \
+    rpm/harbour-spiritlevel.changes.in \
+    rpm/harbour-spiritlevel.changes.run.in \
+    rpm/harbour-spiritlevel.spec \
     translations/*.ts
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172
