@@ -17,7 +17,7 @@ Rectangle {
         id: x_axis_rectangle
         width: parent.width
         height: width / 10.8
-        visible: config.uni_style == "Both" || config.uni_style == "X"
+        visible: config.uni_style == "both" || config.uni_style == "X"
         color: Qt.lighter(Theme.secondaryHighlightColor, 1.2)
         opacity: opacity_circles
         radius: height*0.5
@@ -29,7 +29,7 @@ Rectangle {
         id: y_axis_rectangle
         width: parent.height / 10.8
         height: parent.width
-        visible: config.uni_style == "Both" || config.uni_style == "Y"
+        visible: config.uni_style == "both" || config.uni_style == "Y"
         color: Qt.lighter(Theme.secondaryHighlightColor, 1.2)
         opacity: opacity_circles
         radius: width*0.5
@@ -67,7 +67,7 @@ Rectangle {
         height: 1
         color: "black"
         opacity: opacity_lines
-        visible: config.uni_style == "Both" || config.uni_style == "Y"
+        visible: config.uni_style == "both" || config.uni_style == "Y"
         border.color: "black"
         border.width: 1
         anchors.horizontalCenter: parent.horizontalCenter
@@ -79,7 +79,7 @@ Rectangle {
         height: 1
         color: "black"
         opacity: opacity_lines
-        visible: config.uni_style == "Both" || config.uni_style == "Y"
+        visible: config.uni_style == "both" || config.uni_style == "Y"
         border.color: "black"
         border.width: 1
         anchors.horizontalCenter: parent.horizontalCenter
@@ -92,7 +92,7 @@ Rectangle {
         height: 1
         color: "black"
         opacity: opacity_lines
-        visible: config.uni_style == "Both" || config.uni_style == "Y"
+        visible: config.uni_style == "both" || config.uni_style == "Y"
         border.color: "black"
         border.width: 1
         anchors.horizontalCenter: parent.horizontalCenter
@@ -105,7 +105,7 @@ Rectangle {
         height: 1
         color: "black"
         opacity: opacity_lines
-        visible: config.uni_style == "Both" || config.uni_style == "Y"
+        visible: config.uni_style == "both" || config.uni_style == "Y"
         border.color: "black"
         border.width: 1
         anchors.horizontalCenter: parent.horizontalCenter
@@ -118,7 +118,7 @@ Rectangle {
         height: 1
         color: "black"
         opacity: opacity_lines
-        visible: config.uni_style == "Both" || config.uni_style == "Y"
+        visible: config.uni_style == "both" || config.uni_style == "Y"
         border.color: "black"
         border.width: 1
         anchors.horizontalCenter: parent.horizontalCenter
@@ -132,7 +132,7 @@ Rectangle {
         rotation: 90
         color: "black"
         opacity: opacity_lines
-        visible: config.uni_style == "Both" || config.uni_style == "X"
+        visible: config.uni_style == "both" || config.uni_style == "X"
         border.color: "black"
         border.width: 1
         anchors.horizontalCenter: parent.horizontalCenter
@@ -145,7 +145,7 @@ Rectangle {
         rotation: 90
         color: "black"
         opacity: opacity_lines
-        visible: config.uni_style == "Both" || config.uni_style == "X"
+        visible: config.uni_style == "both" || config.uni_style == "X"
         border.color: "black"
         border.width: 1
         anchors.horizontalCenter: parent.horizontalCenter
@@ -159,7 +159,7 @@ Rectangle {
         rotation: 90
         color: "black"
         opacity: opacity_lines
-        visible: config.uni_style == "Both" || config.uni_style == "X"
+        visible: config.uni_style == "both" || config.uni_style == "X"
         border.color: "black"
         border.width: 1
         anchors.horizontalCenter: parent.horizontalCenter
@@ -173,7 +173,7 @@ Rectangle {
         rotation: 90
         color: "black"
         opacity: opacity_lines
-        visible: config.uni_style == "Both" || config.uni_style == "X"
+        visible: config.uni_style == "both" || config.uni_style == "X"
         border.color: "black"
         border.width: 1
         anchors.horizontalCenter: parent.horizontalCenter
@@ -187,7 +187,7 @@ Rectangle {
         rotation: 90
         color: "black"
         opacity: opacity_lines
-        visible: config.uni_style == "Both" || config.uni_style == "X"
+        visible: config.uni_style == "both" || config.uni_style == "X"
         border.color: "black"
         border.width: 1
         anchors.horizontalCenter: parent.horizontalCenter
@@ -198,7 +198,7 @@ Rectangle {
         id: measure_x
         width: parent.width / 14.0571397419
         height: width
-        visible: config.uni_style == "Both" || config.uni_style == "X"
+        visible: config.uni_style == "both" || config.uni_style == "X"
         color: (accel.x_acel - accel.x_acel_cal) < 2 && (accel.x_acel - accel.x_acel_cal) > -2 ? Theme.highlightColor : Theme.secondaryColor
         opacity: opacity_measure
         border.color: "black"
@@ -212,7 +212,7 @@ Rectangle {
         id: measure_y
         width: parent.width / 14.0571397419
         height: width
-        visible: config.uni_style == "Both" || config.uni_style == "Y"
+        visible: config.uni_style == "both" || config.uni_style == "Y"
         color: (accel.y_acel - accel.y_acel_cal) < 2 && (accel.y_acel - accel.y_acel_cal) > -2 ? Theme.highlightColor : Theme.secondaryColor
         opacity: opacity_measure
         border.color: "black"

@@ -27,9 +27,24 @@ BuildRequires:  qt5-qtsensors
 BuildRequires:  qt5-qtdeclarative-import-multimedia
 BuildRequires:  qt5-qtdeclarative-import-localstorageplugin
 BuildRequires:  desktop-file-utils
+BuildRequires:  qt5-qttools-linguist
 
 %description
 Short description of my Sailfish OS Application
+%if "%{?vendor}" == "chum"
+PackageName: Spritradar
+Type: desktop-application
+Categories:
+ - Uitility
+DeveloperName: Mark Washeim (poetaster)
+Custom:
+ - Repo: https://github.com/poetaster/harbour-spiritlevel
+Icon: https://raw.githubusercontent.com/poetaster/harbour-spiritlevel/master/icons/172x172/harbour-spiritlevel.png
+Screenshots:
+ - https://raw.githubusercontent.com/poetaster/harbour-spiritlevel/master/Screenshot_1.png
+ - https://raw.githubusercontent.com/poetaster/harbour-spiritlevel/master/Screenshot_2.png
+ - https://raw.githubusercontent.com/poetaster/harbour-spiritlevel/master/Screenshot_3.png
+%endif
 
 %prep
 %setup -q -n %{name}-%{version}

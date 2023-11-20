@@ -13,27 +13,27 @@ Page {
         anchors.fill: parent
         Component.onCompleted:
         {
-            if(config.contrast == "low")
+            if(config.contrast === "low")
                 contrast_combo.currentIndex = 0
-            else if (config.contrast == "high")
+            else if (config.contrast === "high")
                 contrast_combo.currentIndex = 1
 
-            if(config.style == "regular")
+            if(config.style === "regular")
             {
                 regular_switch.checked = true
                 unidimensional_switch.checked = false
             }
-            else if(config.style == "unidimensional")
+            else if(config.style === "unidimensional")
             {
                 regular_switch.checked = false
                 unidimensional_switch.checked = true
             }
 
-            if(config.uni_style == "both")
+            if(config.uni_style === "both")
                 unidimensional_combo.currentIndex = 0;
-            else if(config.uni_style == "X")
+            else if(config.uni_style === "X")
                 unidimensional_combo.currentIndex = 1;
-            else if(config.uni_style == "Y")
+            else if(config.uni_style === "Y")
                 unidimensional_combo.currentIndex = 2;
         }
 
@@ -42,7 +42,7 @@ Page {
             width: settings_page.width
             spacing: Theme.paddingSmall
             PageHeader {
-                title: "Settings"
+                title: qsTr("Settings")
             }
             SectionHeader {
                 text: "Style"
@@ -56,7 +56,7 @@ Page {
                 {
                     if(checked)
                     {
-
+                        config.style == "unidimensional"
                     }
                     else
                     {
@@ -99,7 +99,7 @@ Page {
                 onCurrentIndexChanged:
                 {
                     if(currentIndex == 0)
-                        config.uni_style = "Both"
+                        config.uni_style = "both"
                     else if(currentIndex == 1)
                         config.uni_style = "X"
                     else if(currentIndex == 2)
@@ -113,8 +113,8 @@ Page {
                 currentIndex: 0
 
                 menu: ContextMenu {
-                    MenuItem { text: "Regular contrast" }
-                    MenuItem { text: "High contrast" }
+                    MenuItem { text: qsTr("Regular contrast") }
+                    MenuItem { text: qsTr("High contrast") }
                 }
                 onCurrentIndexChanged:
                 {

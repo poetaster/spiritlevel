@@ -18,12 +18,13 @@ ApplicationWindow
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
     QtObject {
         id:config
-        property bool first_use: false
-        property string contrast: "low" // or "high"
-        property string uni_style: "Both" // or  X or Y
-        property string style: "regular" // or "unidimensional"
-        property real x_cal: 0.0  //x_acel_cal
-        property real y_cal: 0.0  //x_acel_cal
+        //"text":x.isOpen?qsTr("Open"):qsTr("Closed")
+        property bool first_use: true
+        property string contrast: "high" //Db.getProp("contrast") // "high" // or "high"
+        property string uni_style: "both" // Db.getProp("uni_style") // "both" // or  X or Y
+        property string style: "regular" //Db.getProp("style") // "regular" // or "unidimensional"
+        property real x_cal: 0.0 // Db.getProp("x_cal") //0.0  //x_acel_cal
+        property real y_cal: 0.0 // Db.getProp("y_cal") //0.0  //x_acel_cal
         onFirst_useChanged: changed()
         onContrastChanged: changed()
         onUni_styleChanged: changed()
@@ -35,7 +36,21 @@ ApplicationWindow
     }
     Connections {
         target: config
-        onChanged: console.log("changed")
+        onChanged: {
+            /*
+            console.log("changed")
+            console.log(config.uni_style)
+            console.log(config.style)
+            console.log(config.contrast)
+            console.log(config.x_cal)
+            console.log(config.y_cal)
+            */
+            Db.setProp("contrast",config.contrast)
+            Db.setProp("uni_style",config.uni_style)
+            Db.setProp("style",config.style)
+            Db.setProp("x_cal",config.x_cal)
+            Db.setProp("y_cal",config.y_cal)
+        }
     }
     property string contrast: config.contrast
     /*
@@ -51,17 +66,37 @@ ApplicationWindow
     }*/
     Component.onCompleted:
     {
-        if(!config.first_use)
-        {
-            config.contrast = "low";
-            config.style = "regular";
-            config.uni_style = "Both";
-            config.first_use = true;
+        var fuse = Db.getProp('first_use')
+        if( fuse !== "false" ) {
+           // init the db
+            //console.log(fuse)
+            Db.setProp("first_use","false")
+            Db.setProp("contrast","high")
+            Db.setProp("uni_style","both")
+            Db.setProp("style","regular")
+            config.x_cal = accel.x_acel_cal
+            config.y_cal = accel.y_acel_cal
+            Db.setProp("x_cal",config.x_cal)
+            Db.setProp("y_cal",config.y_cal)
         }
-        else
-        {
-            accel.x_acel_cal = config.x_cal
-            accel.y_acel_cal = config.y_cal
+        if( fuse === "false" ) {
+            //console.log(fuse)
+            var contrast = Db.getProp("contrast")
+            var style = Db.getProp("style")
+            var uni_style = Db.getProp("uni_style")
+            var x_cal = Db.getProp("x_cal")
+            var y_cal = Db.getProp("y_cal")
+
+            // FIRST uni_style
+            config.uni_style = uni_style
+            config.contrast = contrast
+            config.style = style
+
+            config.x_cal = x_cal
+            accel.x_acel_cal = x_cal
+            config.y_cal = y_cal
+            accel.y_acel_cal = y_cal
+
         }
     }
 

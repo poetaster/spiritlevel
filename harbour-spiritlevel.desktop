@@ -12,4 +12,4 @@ Exec=sailfish-qml harbour-spiritlevel
 [X-Sailjail]
 OrganizationName=de.poetaster
 ApplicationName=Spiritlevel
-Permissions=Compatibility;Camera;Audio;Microphone;MediaIndexing;RemovableMedia;UserDirs
+Permissions=Compatibility;Camera

@@ -69,14 +69,14 @@ Page {
             Label {
                 x: Theme.paddingLarge + 50
                 text: "X: " + (accel.x_acel - accel.x_acel_cal).toFixed(accel.precisao)
-                visible: config.style == "regular" || config.uni_style == "Both" || config.uni_style == "X"
+                visible: config.style == "regular" || config.uni_style == "both" || config.uni_style == "X"
                 color: Theme.highlightColor
                 font.pixelSize: Theme.fontSizeLarge
             }
             Label {
                 x: Theme.paddingLarge + 50
                 text: "Y: " + (accel.y_acel - accel.y_acel_cal).toFixed(accel.precisao)
-                visible: config.style == "regular" || config.uni_style == "Both" || config.uni_style == "Y"
+                visible: config.style == "regular" || config.uni_style == "both" || config.uni_style == "Y"
                 color: Theme.highlightColor
                 font.pixelSize: Theme.fontSizeLarge
             }

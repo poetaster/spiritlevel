@@ -5,37 +5,41 @@
     <name>CoverPage</name>
     <message>
         <source>Angles:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Winkel</translation>
     </message>
 </context>
 <context>
     <name>FirstPage</name>
     <message>
         <source>Reset Calibration</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Eichung rückstellen</translation>
     </message>
     <message>
         <source>Calibrate</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Eichen</translation>
     </message>
     <message>
         <source>Angles:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Winkel</translation>
     </message>
     <message>
         <source>Spiritlevel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Wasserwage</translation>
     </message>
 </context>
 <context>
-    <name>SecondPage</name>
+    <name>Settings</name>
     <message>
-        <source>Nested Page</source>
-        <translation>Unterseite</translation>
+        <source>Settings</source>
+        <translation type="unfinished">Einstellungen</translation>
     </message>
     <message>
-        <source>Item</source>
-        <translation>Element</translation>
+        <source>Regular contrast</source>
+        <translation type="unfinished">Niedrig Kontrast</translation>
+    </message>
+    <message>
+        <source>High contrast</source>
+        <translation type="unfinished">Hoher Kontrast</translation>
     </message>
 </context>
 </TS>
