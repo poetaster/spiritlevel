@@ -30,20 +30,20 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  qt5-qttools-linguist
 
 %description
-Short description of my Sailfish OS Application
+A spiritlevel based on Based Vatupassi, 2014 - 2022 Bruno Valdrighi Luvizotto
 %if "%{?vendor}" == "chum"
 PackageName: Spritradar
 Type: desktop-application
 Categories:
  - Uitility
-DeveloperName: Mark Washeim (poetaster)
+DeveloperName: Bruno Luvizotto, Mark Washeim (poetaster)
 Custom:
  - Repo: https://github.com/poetaster/harbour-spiritlevel
-Icon: https://raw.githubusercontent.com/poetaster/harbour-spiritlevel/master/icons/172x172/harbour-spiritlevel.png
+Icon: https://github.com/poetaster/spiritlevel/blob/cdc5797734bce5f977b255798d34f0251257929b/icons/172x172/harbour-spiritlevel.png
 Screenshots:
- - https://raw.githubusercontent.com/poetaster/harbour-spiritlevel/master/Screenshot_1.png
- - https://raw.githubusercontent.com/poetaster/harbour-spiritlevel/master/Screenshot_2.png
- - https://raw.githubusercontent.com/poetaster/harbour-spiritlevel/master/Screenshot_3.png
+ - https://github.com/poetaster/spiritlevel/blob/cdc5797734bce5f977b255798d34f0251257929b/Screenshot_001.png
+ - https://github.com/poetaster/spiritlevel/blob/cdc5797734bce5f977b255798d34f0251257929b/Screenshot_002.png
+ - https://github.com/poetaster/spiritlevel/blob/cdc5797734bce5f977b255798d34f0251257929b/Screenshot_003.png
 %endif
 
 %prep
