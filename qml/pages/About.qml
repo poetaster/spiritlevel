@@ -19,7 +19,7 @@ Page {
                 title: "About"
             }
             Label {
-                text: "Spiritlevel"
+                text: "Spiritlevel / Vatupassi"
                 color: Theme.highlightColor
                 font.pixelSize: Theme.fontSizeHuge
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -31,7 +31,8 @@ Page {
                 anchors.horizontalCenter: parent.horizontalCenter
             }
             Label {
-                text: "Author: Bruno Luvizotto, Updates, Poetaster"
+                text: "Authored by Bruno Luvizotto, 2014\n"+
+                                "Updated 2023, poetaster"
                 color: Theme.primaryColor
                 font.pixelSize: Theme.fontSizeMedium
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -39,78 +40,18 @@ Page {
             Row {
                 spacing: Theme.paddingSmall
                 anchors.horizontalCenter: parent.horizontalCenter
-                Image {
-                    height: email_id.height
-                    width: height
-                    source: "../images/gmail-icon-logo.png"
-                }
                 Label {
                     id: email_id
-                    text: "brunoluvizotto@gmail.com"
-                    color: Theme.primaryColor
+                    text: "Source, on github. BSD license."
+                    color: Theme.highlightColor
                     font.pixelSize: Theme.fontSizeMedium
                     //anchors.horizontalCenter: parent.horizontalCenter
                     MouseArea {
                         anchors.fill: parent
                         onPressed: parent.color = Theme.highlightColor
                         onReleased: parent.color = Theme.primaryColor
-                        onClicked: Qt.openUrlExternally("mailto:brunoluvizotto@gmail.com" +
-                                                        "?subject=Vatupassi App and other things :)")
+                        onClicked: Qt.openUrlExternally("https://github.com/poetaster/spiritlevel")
                     }
-                }
-            }
-            Row {
-                spacing: Theme.paddingSmall
-                anchors.horizontalCenter: parent.horizontalCenter
-                Image {
-                    height: email_id.height
-                    width: height
-                    source: "../images/Twitter-icon-logo.png"
-                }
-                Label {
-                    text: "www.twitter.com/brunoluvizotto"
-                    color: Theme.primaryColor
-                    font.pixelSize: Theme.fontSizeMedium
-                    //anchors.horizontalCenter: parent.horizontalCenter
-                    MouseArea {
-                        anchors.fill: parent
-                        onPressed: parent.color = Theme.highlightColor
-                        onReleased: parent.color = Theme.primaryColor
-                        onClicked: Qt.openUrlExternally("http://www.twitter.com/brunoluvizotto")
-                    }
-                }
-            }
-            Row {
-                spacing: Theme.paddingSmall
-                anchors.horizontalCenter: parent.horizontalCenter
-                Image {
-                    height: email_id.height
-                    width: height
-                    source: "../images/linkedin-icon-logo.png"
-                }
-                Label {
-                    text: "Bruno Valdrighi Luvizotto"
-                    horizontalAlignment: Text.AlignHCenter
-                    color: Theme.primaryColor
-                    font.pixelSize: Theme.fontSizeMedium
-                    //anchors.horizontalCenter: parent.horizontalCenter
-                    MouseArea {
-                        anchors.fill: parent
-                        onPressed: parent.color = Theme.highlightColor
-                        onReleased: parent.color = Theme.primaryColor
-                        onClicked: Qt.openUrlExternally("http://br.linkedin.com/pub/bruno-valdrighi-luvizotto/27/8ba/4a6/")
-                    }
-                }
-            }
-            Image {
-                width: parent.width / 4
-                height: width / 3
-                fillMode: Image.PreserveAspectFit
-                source: "../images/btn_donate_LG.gif"
-                anchors.horizontalCenter: parent.horizontalCenter
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: Qt.openUrlExternally("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R7ZWGUQTHQRJ4")
                 }
             }
         }

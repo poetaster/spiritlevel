@@ -4,7 +4,7 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="47"/>
+        <location filename="../qml/cover/CoverPage.qml" line="24"/>
         <source>Angles:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -19,6 +19,11 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="38"/>
         <source>Calibrate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="55"/>
+        <source>Spiritlevel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
