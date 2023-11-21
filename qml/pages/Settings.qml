@@ -109,7 +109,7 @@ Page {
             ComboBox {
                 id: contrast_combo
                 width: settings_page.width
-                label: "Constrast"
+                label: "Contrast"
                 currentIndex: 0
 
                 menu: ContextMenu {
